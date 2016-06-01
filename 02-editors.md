@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will most likely use vim. It is simpler, has a central repository of scripts, plugins, color schemes, and is more easily portable.
 
 --
 
@@ -67,6 +67,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will most likely use Sublime. It's ease to pick up and has very positive user experiences. Since I will be working with both Windows and Linux, cross-platform support was also an important consideration for me. 
 
  
