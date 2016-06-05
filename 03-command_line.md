@@ -23,6 +23,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 8. $>>$ = takes output of command on left and appends it to file on right
 9. $|$ = takes output from command on left and pipes it to command on right
 10. find . -name "*.txt" -print = finds all files with name that has .txt in it in current directory and prints it out
+
+
 ---
 
 ###Q2.  List Files in Unix   
