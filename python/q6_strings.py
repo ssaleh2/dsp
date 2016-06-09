@@ -3,8 +3,7 @@
 
 
 def donuts(count):
-    """
-    Given an int count of a number of donuts, return a string of the
+    """Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
@@ -18,6 +17,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if int(count) >= 10:
+        count = "many"
+    return "Number of donuts: %s" % count
+
     raise NotImplementedError
 
 
@@ -37,6 +40,11 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    shortened = ""
+    if len(s) >2:
+        shortened = s[0]+s[1]+s[-2]+s[-1]
+
+    return shortened
     raise NotImplementedError
 
 
@@ -56,6 +64,9 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    letter = s[0]
+    return letter + s[1:].replace(letter, '*')
+
     raise NotImplementedError
 
 
@@ -74,6 +85,8 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    return b[0:2] + a[2:] + " " + a[0:2] + b[2:]
+
     raise NotImplementedError
 
 
@@ -91,6 +104,14 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+
+    if len(s) >= 3:
+        if s[-3:] == 'ing':
+            s+= 'ly'
+        else:
+            s+= 'ing'
+
+    return s
     raise NotImplementedError
 
 
@@ -102,6 +123,7 @@ def not_bad(s):
     So 'This dinner is not that bad!' yields: 'This dinner is
     good!'
 
+    
     >>> not_bad('This movie is not so bad')
     'This movie is good'
     >>> not_bad('This dinner is not that bad!')
@@ -111,6 +133,14 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+
+    sentence = s.split()
+    if "bad" in sentence and "not" in sentence:
+        if sentence.index("not") < sentence.index("bad"):
+            s = s[:s.index("not")] + "good"
+        
+
+    return s
     raise NotImplementedError
 
 
@@ -130,4 +160,19 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    if len(a)%2 == 0:
+        a_front = a[:len(a)/2]
+        a_back = a[len(a)/2:]
+    else:
+        a_front = a[:(len(a)/2+1)]
+        a_back = a[(len(a)/2+1):]
+
+    if len(b)%2 == 0:
+        b_front = b[:len(b)/2]
+        b_back = b[len(b)/2:]
+    else:
+        b_front = b[:(len(b)/2+1)]
+        b_back = b[(len(b)/2+1):]
+    return a_front + b_front + a_back + b_back
+
     raise NotImplementedError
