@@ -47,6 +47,6 @@ print "Biased Mean: ", mean_biased
 
 *The solution:*
 
-![Acutal vs. Biased PMF](C:\ds\metis\prework\dsp\statistics\Actual_vs_Biased_PMF.png)
+![Acutal vs. Biased PMF](https://github.com/ssaleh2/dsp/blob/master/statistics/Actual_vs_Biased_PMF.png)
 
 The actual mean of ~1.0242 is substantially less than the biased mean of ~2.404, which serves as a great example of the class size paradox since surveying the children skews the sampling to those households with more children.

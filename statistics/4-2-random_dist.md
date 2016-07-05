@@ -25,8 +25,8 @@ thinkplot.Show(xlabel='Percentile Rank', ylabel='CDF')
 
 *The solution:*
 
-![Random PMF](C:\ds\metis\prework\dsp\statistics\PMF_random.png)
-![Random CDF](C:\ds\metis\prework\dsp\statistics\CDF_random.png)
+![Random PMF](https://github.com/ssaleh2/dsp/blob/master/statistics/PMF_random.png)
+![Random CDF](https://github.com/ssaleh2/dsp/blob/master/statistics/CDF_random.png)
 
 The fact that CDF random shows a linear result indicates a uniform distribution. Although the PMF also has a uniform distribution, it is much harder to visualize given the number of points and fluctuates; that is why CDF is more useful in this situation.
 
