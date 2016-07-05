@@ -7,7 +7,7 @@ pregnancy length?
 
 *How I solved it*: I took the difference of the means of the first and other babies and then determining which mean was larger. I then combined the variance of the first and others to ultimately calculate Cohen's d.
 
-'''
+```
 def CohensWeightDiff(firsts, others):
     mean_firsts = firsts.totalwgt_lb.mean()
     mean_others = others.totalwgt_lb.mean()
@@ -22,6 +22,6 @@ def CohensWeightDiff(firsts, others):
     combined_var = (len(firsts)*var_firsts + len(others)*var_others)/(len(firsts) + len(others))
     final = diff_mean / math.sqrt(combined_var)
     return final     
-  '''
+  ```
 
 *The solution:* The Cohen's d for weight is ~0.089, while for pregnancy length it was ~0.029. Both do not have a large difference between groups.

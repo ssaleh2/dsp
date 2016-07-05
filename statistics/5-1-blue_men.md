@@ -9,7 +9,7 @@ population is in this range? Hint: use scipy.stats.norm.cdf.
 
 *How I solved it:* I used scipy.stats to use a normal cdf for height of men in centimeters and then I subtracted the different between two percentiles in that distribution. 
 
-'''
+```
 %matplotlib inline
 
 import scipy.stats
@@ -22,7 +22,7 @@ lower = scipy.stats.norm.cdf(70*2.54, loc=mean, scale=stdev)
 upper = scipy.stats.norm.cdf(73*2.54, loc=mean, scale=stdev)
 
 eligible = (upper - lower)*100
-'''
+```
 
 *The solution:*
 

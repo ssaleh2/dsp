@@ -8,7 +8,7 @@ Is the distribution uniform?
 
 *How I solved it:* I made a PMF of random numbers and then a CDF and plotted them both to compare.
 
-'''
+```
 %matplotlib inline
 
  #plot PMF
@@ -21,7 +21,7 @@ thinkplot.Show(xlabel='Value', ylabel='Probability')
 cdf = thinkstats2.Cdf(rand)
 thinkplot.Cdf(cdf)
 thinkplot.Show(xlabel='Percentile Rank', ylabel='CDF')
-'''
+```
 
 *The solution:*
 

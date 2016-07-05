@@ -14,7 +14,7 @@ starting place, you can use chap03ex.ipynb.
 
 *How I solved it:* I made a PMF of the number of children in a respondent's household, copied it, and then biased it by multiplying each x value by x, renormalized the data, and then displayed both actual and biased PMF. I then computed the means of the two PMFs by iterating through list of items and adding a weighted contribution to the mean.
 
-'''
+```
 %matplotlib inline
 
 import chap01soln
@@ -43,7 +43,7 @@ for p, x in biased_pmf.d.items():
     mean_biased += p*x 
 print "Actual Mean: ", mean_actual 
 print "Biased Mean: ", mean_biased 
-'''
+```
 
 *The solution:*
 
