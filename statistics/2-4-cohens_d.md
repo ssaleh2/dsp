@@ -11,7 +11,7 @@ pregnancy length?
 def CohensWeightDiff(firsts, others):
     mean_firsts = firsts.totalwgt_lb.mean()
     mean_others = others.totalwgt_lb.mean()
-#determining which is lighter/heavier
+ #determining which is lighter/heavier
     diff_mean = abs(mean_firsts - mean_others)
     if mean_firsts > mean_others:    
         print("firsts babies [%f] are HEAVIER than other babies[%f]." %(mean_firsts, mean_others))

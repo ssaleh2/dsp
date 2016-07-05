@@ -17,7 +17,7 @@ import scipy.stats
 mean = 178
 stdev = 7.7
 
-#calculate percentiles for 5'10" and 6'1"
+ #calculate percentiles for 5'10" and 6'1"
 lower = scipy.stats.norm.cdf(70*2.54, loc=mean, scale=stdev)
 upper = scipy.stats.norm.cdf(73*2.54, loc=mean, scale=stdev)
 

@@ -23,18 +23,18 @@ import thinkstats2
 kidshousehold = resp.numkdhh
 pmf = thinkstats2.Pmf(kidshousehold, label = "Actual")
 
-#create biased PMF
+ #create biased PMF
 new_pmf = pmf.Copy(label=label)
 for x, p in pmf.Items():
     new_pmf.Mult(x, x)      
 new_pmf.Normalize()
 
-#plot both actual and biased PMFs
+ #plot both actual and biased PMFs
 thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf,new_pmf])
 thinkplot.Show(xlabel = 'Number of children (<18y) per household', ylabel = 'probability')
 
-#calculate mean of actual and biased PMFs
+ #calculate mean of actual and biased PMFs
 mean_actual = 0
 for p, x in pmf.d.items():
     mean_actual += p*x 

@@ -11,13 +11,13 @@ Is the distribution uniform?
 '''
 %matplotlib inline
 
-#plot PMF
+ #plot PMF
 rand = [random.random() for x in range(1001)]
 pmf = thinkstats2.Pmf(rand)
 thinkplot.Pmf(pmf, linewidth=0.1)
 thinkplot.Show(xlabel='Value', ylabel='Probability')
 
-#Plotting CDF
+ #Plotting CDF
 cdf = thinkstats2.Cdf(rand)
 thinkplot.Cdf(cdf)
 thinkplot.Show(xlabel='Percentile Rank', ylabel='CDF')
